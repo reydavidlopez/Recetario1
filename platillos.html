@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLATILLOS</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos.css.map">
+    <link rel="stylesheet" href="css/estilos.scss">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        
+        <div class="enlaces">
+          <a href="./index.html">Inicio</a>
+          <a href="./postres.html">Postres</a>
+          <a href="./platillos.html">Platillos</a>
+          <button class="switch" id="switch">
+            <span><i class="fas fa-sun"></i></span>
+            <span><i class="fas fa-moon"></i></span>
+          </button>
+        </div>
+      </nav>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-4">
+              <div class="card" style="width: 18rem;">
+                <img src="https://www.recetasnestle.com.mx/sites/default/files/styles/recipe_detail_desktop/public/srh_recipes/1a145036b7ffe01c73f5097f466dd073.jpg.webp?itok=4K2ORUh0" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">POLLO A LA CAZUELA</h5>
+                  <div class="accordion" id="accordion1">
+                    <div class="accordion-item" class="ocultar"></div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                          <strong>ver más</strong>
+                        </button>
+                      </h2>
+                      <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <h3>INGREDIENTES</h3>
+                          <label id="ingr1"></label><br>
+                          <label id="ingr2"></label><br>
+                          <label id="ingr3"></label><br>
+                          <label id="ingr4"></label><br>
+                          <label id="ingr5"></label><br>
+                          <label id="ingr6"></label><br>
+                          <label id="ingr7"></label><br>
+                          <label id="ingr8"></label><br>
+                          <label id="ingr9"></label><br>
+                          <label id="ingr10"></label><br>
+                            <label for="numeroPersonas1">Número personas</label>
+                          <input type="number" name="" id="numeroPersonas1" class="form-control">
+                          <button onclick="calcularreceta1()">calcular</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-4">
+              <div class="card" style="width: 18rem;">
+                <img src="https://www.recetasnestle.com.mx/sites/default/files/styles/recipe_detail_desktop/public/srh_recipes/154573a9d31fe0b0c8521cf7618c5740.jpg.webp?itok=bmbiLKpT" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">PECHUGA CON CREMA DE CHIPOTLE</h5>
+                  <p class="card-text"></p>
+                  <div class="accordion" id="accordion2">
+                    <div class="accordion-item" class="ocultar"></div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                          <strong>ver más</strong>
+                        </button>
+                      </h2>
+                      <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <h3>INGREDIENTES</h3>
+                          <label id="ingr1R2"></label><br>
+                          <label id="ingr2R2"></label><br>
+                          <label id="ingr3R2"></label><br>
+                          <label id="ingr4R2"></label><br>
+                          <label id="ingr5R2"></label><br>
+                          <label id="ingr6R2"></label><br>
+                          <label id="ingr7R2"></label><br>
+                          <label id="ingr8R2"></label><br>
+                          <label id="ingr9R2"></label><br>
+                          <label id="ingr10R2"></label><br>
+                            <label for="numeroPersona2">Número personas</label>
+                          <input type="number" name="" id="numeroPersona2" class="form-control">
+                          <button onclick="calcularreceta2()">calcular</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-4">
+              <div class="card" style="width: 18rem;">
+                <img src="https://www.recetasnestle.com.mx/sites/default/files/styles/recipe_detail_desktop/public/srh_recipes/f0ac29b2d793ee40149744bd6e02df52.jpg.webp?itok=F3XfUzLR" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">COSTILLA DE CERDO EN ADOBO </h5>
+                  <p class="card-text"></p>
+                  <div class="accordion" id="accordion3">
+                    <div class="accordion-item" class="ocultar"></div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="heading3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                          <strong>ver más</strong>
+                        </button>
+                      </h2>
+                      <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                     <h3>INGREDIENTES</h3>
+                          <label id="ingr1R3"></label><br>
+                          <label id="ingr2R3"></label><br>
+                          <label id="ingr3R3"></label><br>
+                          <label id="ingr4R3"></label><br>
+                          <label id="ingr5R3"></label><br>
+                          <label id="ingr6R3"></label><br>
+                          <label id="ingr7R3"></label><br>
+                          <label id="ingr8R3"></label><br>
+                          <label id="ingr9R3"></label><br>
+                          <label id="ingr10R3"></label><br>
+                            <label for="numeroPersona3">Número personas</label>
+                          <input type="number" name="" id="numeroPersona3" class="form-control">
+                          <button onclick="calcularreceta3()">calcular</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-4">
+              <div class="card" style="width: 18rem;">
+                <img src="https://www.recetasnestle.com.mx/sites/default/files/styles/recipe_detail_desktop/public/srh_recipes/0e098aa440e8407969247e667bfd877c.jpg.webp?itok=WuTlhifb" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">POLLO EN CREMA DE CHIPOTLE</h5>
+                  <p class="card-text"></p>
+                  <div class="accordion" id="accordion4">
+                    <div class="accordion-item" class="ocultar"></div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="heading4">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                          <strong>ver más</strong>
+                        </button>
+                      </h2>
+                      <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                     <H3>INGREDIENTES</H3>
+                          <label id="ingr1R4"></label><br>
+                          <label id="ingr2R4"></label><br>
+                          <label id="ingr3R4"></label><br>
+                          <label id="ingr4R4"></label><br>
+                          <label id="ingr5R4"></label><br>
+                          <label id="ingr6R4"></label><br>
+                          <label id="ingr7R4"></label><br>
+                          <label id="ingr8R4"></label><br>
+                          <label id="ingr9R4"></label><br>
+                          <label id="ingr10R4"></label><br>
+                            <label for="numeroPersona4">Número personas</label>
+                          <input type="number" name="" id="numeroPersona4" class="form-control">
+                          <button onclick="calcularreceta4()">calcular</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-4">
+              <div class="card" style="width: 18rem;">
+                <img src="https://www.recetasnestle.com.mx/sites/default/files/styles/recipe_detail_desktop/public/srh_recipes/f29949e195ff58f247aa485578450f50.jpg.webp?itok=Re4CVsHo" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CHILE CAPEADO RELLENO DE QUESO</h5>
+                  <p class="card-text"></p>
+                  <div class="accordion" id="accordion5">
+                    <div class="accordion-item" class="ocultar"></div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="heading5">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                          <strong>ver más</strong>
+                        </button>
+                      </h2>
+                      <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                    <h3>INGREDIENTES</h3> 
+                          <label id="ingr1R5"></label><br>
+                          <label id="ingr2R5"></label><br>
+                          <label id="ingr3R5"></label><br>
+                          <label id="ingr4R5"></label><br>
+                          <label id="ingr5R5"></label><br>
+                          <label id="ingr6R5"></label><br>
+                          <label id="ingr7R5"></label><br>
+                          <label id="ingr8R5"></label><br>
+                          <label id="ingr9R5"></label><br>
+                          <label id="ingr10R5"></label><br>
+                            <label for="numeroPersona5">Número personas</label>
+                          <input type="number" name="" id="numeroPersona5" class="form-control">
+                          <button onclick="calcularreceta5()">calcular</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-4">
+              <div class="card" style="width: 18rem;">
+                <img src="https://www.recetasnestle.com.mx/sites/default/files/styles/recipe_detail_desktop/public/srh_recipes/58be881faa48a9578632a010e6739fe1.jpg.webp?itok=guLKKZKD" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">PECHUGA DE POLLO CON REQUESON</h5>
+                  <p class="card-text"></p>
+                  <div class="accordion" id="accordion6">
+                    <div class="accordion-item" class="ocultar"></div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="heading6">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                          <strong>ver más</strong>
+                        </button>
+                      </h2>
+                      <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                     
+                          <label id="ingr1R6"></label><br>
+                          <label id="ingr2R6"></label><br>
+                          <label id="ingr3R6"></label><br>
+                          <label id="ingr4R6"></label><br>
+                          <label id="ingr5R6"></label><br>
+                          <label id="ingr6R6"></label><br>
+                          <label id="ingr7R6"></label><br>
+                          <label id="ingr8R6"></label><br>
+                          <label id="ingr9R6"></label><br>
+                          <label id="ingr10R6"></label><br>
+                            <label for="numeroPersona6">Número personas</label>
+                          <input type="number" name="" id="numeroPersona6" class="form-control">
+                          <button onclick="calcularreceta6()">calcular</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            
+    </div>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+</html>

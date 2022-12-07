@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tutorial Java</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <button onclick="Notificacion()" class="btn btn-success mt-5 m-5">Notificación</button>
+
+  <script>
+    Notification.requestPermission().then(perm => {
+      if (perm === 'granted') {
+        
+      }
+    });
+
+    function Notificacion() {
+      new Notification("Alerta", {
+        body: 'Este es el mensaje',
+        icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDIksdUsy16jNZHcpvKWfkwgxTlfm1wOPzmUenqeI&s',
+        vibrate: [100, 100, 100],
+        onClick: function () {
+          window.location = "https://google.es"
+        }
+      });
+    }
+  </script>
+
+</body>
+
+</html>
